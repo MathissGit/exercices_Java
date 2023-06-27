@@ -7,8 +7,8 @@ public class bissextile {
 	public static void main(String[] args) {
 		boolean isRunning = true;
 		int choix = 0;
+		Scanner scan = new Scanner(System.in);
 		while(isRunning) {
-			Scanner scan = new Scanner(System.in);
 			System.out.println("Année : ");
 			int year = scan.nextInt();
 			if((year % 4 == 0)||(year % 400 == 0 && year % 100 != 0)) {
